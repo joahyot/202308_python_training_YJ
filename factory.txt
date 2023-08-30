@@ -1,0 +1,5 @@
+id cyear dep
+1 24 HMMU
+2 20 RMU
+3 0.1 CMMU
+4 0.3 FMU
