@@ -1,40 +1,26 @@
-* 중위수, 중위수 절대 편차는 이상치에 영향을 받지 않음
-* 왜도 > 0 or 왜도 <0 일 경우 : 비대칭 
-* 왜도가 0에 가까울수록 대칭 
-* 첨도는 데이터의 높이를 보고 해석함. 
-* 첨도 > 0 (중심 데이터 많음) 
-* 첨도 < 0 (중심 데이터 적음)
+총정리
 
-* margins = 행의 합계와 열의 합계를 출력해줄거냐? True
+1. 주피터 노트북 실행
+2. 연산자 : 산술, 할당, 비교, 논리
+3. 데이터 유형 : 수치형, 문자형, boolean
+4. 데이터 : list, tuple, dictionary, series, dataframe
+5. 데이터 읽어오기 : pandas, read_table(), read_csv(), read_excel(), read_pickle()
+6. 데이터 저장하기 : data.to_csv(), to_excel(), to_pickle()
+7. 데이터 핸들링 
+(1) 보기 : data, data.head(), data.tail()
+(2) 속성 : columns, shape, dtypes, info()
+(3) 슬라이싱 : data.loc[행, 열]
+(4) 열 생성하기 : 연산, 변환, 범주 줄이기, 구간의 정보
+(5) 정렬하기 : list.sort(), dataframe_sort_values()
+(6) 데이터 합치기 : pandas.concat(), pandas.merge()
 
-* 비교할 때 기준이 동일한지 확인해야 함 
-* 빈도, 백분율로 보고서 작성 
+8. 데이터의 종류 : 수치형 데이터, 범주형 데이터
+9. 탐색적 데이터 분석
+(1) 1개의 범주형 데이터 분석: 표, 막대 그래프
+(2) 1개의 수치형 데이터 분석: 표, 히스토그램, 상자그림, 바이올린, 기술통계량
+(3) 2개의 범주형 데이터 분석: 교차표, 누적막대그래프
+(4) 범주별 수치형 데이터 분석: 범주별 히스토그램, 상자그림, 바이올린, 범주별 기술통계량
+(5) 2개의 수치형 데이터 분석: 산점도, 산점행렬도, 상관계수(Pearson's)
 
-* round(df.corr(), ndigit = 3) 
-
-* EDA Report : Pandas-Profiling, sweetviz 
-
-<파이썬>
-1. 문법 : 유투브 최성철 가천대학교
-2. 분석 : 오늘코드, 박조은
-3. 책: 파이썬으로 배우는 딥러닝 교과서
-
-현업에 적용
-Googling, ChatGPT
-
-이부일 
-010-3420-8736
-buillee@insightmining.co.kr
-
-
-패스트캠퍼스 : 온라인 강의 
-인프런 : 온라인 강의
-
-머신러닝, 딥러닝 
-석박사 과정: 통합과정(5년) 
-
-
-*** 회귀분석
-데이터 분석의 목표
-1. 예측(Prediction) : 숫자
-2. 분류(Classification) : 문자 
+10. EDA report : sweetviz
+11. Regression Analysis : 단순선형회귀분석, 다중선형회귀분석
