@@ -1,0 +1,61 @@
+데이터 핸들링 = 데이터 전처리
+
+1. 데이터 보기: 전체, 일부(head(), tail())
+2. 데이터의 속성: 행의 개수(len()), 행과 열의 개수: shape, 열의이름 : columns
+	          데이터의 유형: dtypes , 데이터의 정보: info()
+3. 데이터의 슬라이싱 : 행, 열, 행과 열, loc[행, 열], iloc[행, 열]
+4. 새로운 열 만들기 : 연산, 변환, 범주 줄이기 또는 수치형 데이터를 범주형 데이터
+		   구간의 정보를 갖는 데이터 
+5. 열 삭제하기: del, drop
+6. 데이터의 정렬: 리스트의 정렬 : sort(), 데이터 프레임 : sort_values()
+7. 데이터 합치기: concat(), merger()
+
+책 200~300권 사기
+
+
+변환 : Min-Max Normalization  : 0~1
+
+(숫자 - min) / (max - min)
+
+index (위치, 행, 행의 이름)
+
+# 상자그림
+y축이 중요, x축은 의미 없음
+min
+max
+median(중위수 = 중앙값, Q2)
+Q1(1st Quatile: 사분위수) 
+Q3(3rd Quatile)
+IQR(사분위범위 = Q3 - Q1)
+Q3 + 1.5 x IQR
+Q1 - 1.5 x IQR
+
+# 바이올린 그래프
+x축 길이: 데이터의 양
+
+# 통계 
+대표하다: 비슷하다
+
+# 수업 정리 
+데이터 핸들링 
+(1) 변환: 로그변환, 루트변환, 역수변환 : numpy, log10(), sqrt()
+(2) 범주 줄이기: apply(lambda x: )
+(3) 구간의 정보를 갖는 열 : pandas.cut
+(4) 열 삭제하기: del data["열의 이름"], data.drop()
+(5) 정렬하기: list.sort(reverse), dataframe.sort_values(by= "", acsending)
+(6) 합치기: pandas.concat(), pandas.merge(how=inner, outer, left, right)
+
+EDA
+(1) 범주형 데이터의 분석: 1개의 열
+빈도: data.범주형데이터.value_counts()
+백분율: data.범주형데이터.value_counts(normalize=True)*100
+막대 그래프: sns.barplot(x=범주의 이름, y=범주의 빈도)
+matplotlib.pyplot -> plt.show()
+
+(2) 수치형 데이터의 분석: 1개의 열
+구간의 정보를 갖는 새로운 열을 만들고, 빈도, 백분율
+데이터 시각화
+히스토그램: sns.histplot()
+상자그림: sns.boxplot()
+바이올린: sns.violinplot()
+기술통계량 : 중심(대표값) : 평균, 절사평균, 중위수, 최빈수

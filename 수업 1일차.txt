@@ -1,0 +1,73 @@
+도메인 (금속, 통신, 전자) + 통계 + 컴퓨터(DB, Python, 프로그래밍)
+인공지능 : 좋은 질문할 수 있는 능력을 가진 사람 (전문가를 더 전문가로 만들어준다)
+문제 정의할 수 있는 능력
+
+<강의 계획>
+1. 아나콘다 설치
+2. 주피터 노트북: GUI (Graphic User Interface)
+VS Code, Spyder, Pycharm, ...
+3. 연산자 
+4. 데이터의 유형
+5. 데이터 저장
+6. 데이터 읽어오기 / 저장하기
+7. 데이터 핸들링
+8. 데이터 분석 기초: 탐색적 데이터 분석 
+
+. . . 
+
+머신러닝, 딥러닝 : 인공지능
+
+
+
+cd : change directory 
+c:\Windows>cd ..
+
+d: C드라이브에서 D드라이브로 이동
+
+mkdir: make directory 새로운 폴더 만들기 
+cd novelis --> D:\novelis>
+cd ds2023 --> D:\novelis\ds2023
+
+적자생존, 필사즉생 
+
+유투브 : 최성철 가천대학교 : 70강
+유투브 : 이부일 Py릴레오 : 13강
+(주)인사이트마이닝 CEO
+
+<주요 패키지> 
+pandas 
+numpy; 선형대수학, 수학관련 함수 사용 시 편리
+matplotlib; data visualization 
+seaborn; data visualization 
+plotly: Interactive Grapth
+scipy: Science and Statistics
+sklearn: Machine Learning
+
+sight vs. Insight
+보이는 것은 반드시 보이지 않은 것과 연결되어 있음
+
+
+1. 아나콘다 설치
+2. 주피터 노트북을 실행: 메뉴, 도구모음, 셀(Code, Markdown), Shift +Enter
+3. 연산자; 산술, 할당, 비교, 논리 연산자
+4. 데이터의 유형: 수치형, 문자형, boolean형
+5. 데이터: 리스트, 튜플, 딕셔너리, 시리즈, 데이터프레임
+6. 패키지: 함수들의 모임
+pandas 
+설치: pip install 패키지명
+로딩; impoer 패키지명 as 줄임말
+
+7. 데이터 읽어오기(HDD --> RAM)
+txt: pd.read_table()
+csv: pd.read_csv()
+xls: pd.read_excel()
+pickle: pd.read_pickle()
+
+8. 데이터 저장하기(RAM --> HDD)
+txt: data.to_csv(sep = )
+csv: data.to_csv()
+xlsx: data.to_excel()
+pickle: data.to_pickle()
+
+이미지 분석 CNN 기법 (Convolutional Neural Network) 
+; 한장의 컬러 사진은 3차원 데이터로 Fully Connected 신경을 학습
